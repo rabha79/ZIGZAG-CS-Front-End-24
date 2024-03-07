@@ -1,0 +1,135 @@
+:root{
+    --dark-color: #905672;
+    --main-color:#854839;
+    --back-color:#F3E5D8;
+    --text:#665C58;
+    --tt:#5b5553;
+    --hr:#d3d3d3;
+    --baby-pink:#f6e8ef;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: var(--back-color);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+h1,h2{
+    font-family: "Young Serif", serif;
+    margin: 20px 0px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    color: var(--main-color);
+}
+img{
+    max-width: 100%;
+    border-radius: 16px;
+}
+.container .imge{
+    padding: 32px;
+    border-radius:16px;
+    overflow: hidden;
+}
+.container .imge img{
+    border-radius:16px;
+}
+.container{
+    background-color: #fff;
+    border-radius: 16px;
+    max-width: 700px;
+    margin: 32px;
+}
+.content{
+    padding: 0rem 32px 32px 32px;
+}
+ul li{
+    margin-bottom: 8px;
+}
+ul li span{
+    margin-left: 16px;
+    color: var(--text);
+    font-weight: 800;
+}
+::marker{
+    color: var(--main-color);
+    font-weight: 900;
+}
+ul{
+    padding-left: 20px;
+}
+ol{
+    padding-left: 20px; 
+}
+ol li span{
+    margin-left: 16px;
+    font-weight: 600;
+    color: var(--tt);
+}
+ol li{
+    margin-bottom: 8px;
+    margin-right: 16px;
+    color: var(--text); 
+}
+hr{
+    margin: 24px 0;
+    border: 1px solid var(--hr);
+}
+.text{
+    margin: 24px 0;
+}
+.preparation-time{
+    background-color: var(--baby-pink);
+    padding: 20px;
+    border-radius: 16px;
+}
+.preparation-time h3{
+    color: var(--dark-color);
+    margin-bottom: 12px;
+}
+.preparation-time ul li::marker{
+    color: var(--dark-color);
+}
+.ingredients ul li{
+    color: var(--text);
+}
+.nutrition-data .data{
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--hr);
+    display: flex;
+}
+.nutrition-data .data:last-child{
+    border-bottom: 0;
+}
+.nutrition-data .data span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.nutrition-data .data >*{
+    margin-right: auto;
+    width: 100px; 
+}
+
+@media(max-width:540px){
+    h1{
+        margin-top: 24px;
+    }
+    .container{
+        margin: 0;
+    }
+    .container .imge{
+        padding:0px;
+        border-radius: 0;
+    }
+    .container .imge img{
+        border-radius: 0;
+    }
+
+}
